@@ -140,31 +140,8 @@ Twenty sections, ordered from *learn it* → *use it* → *test it*.
 
 ---
 
-## 🌐 Publish it as a website
-
-The repo is already a static site. To get a shareable link:
-
-1. **Settings → Pages**
-2. Source: **Deploy from a branch** → `main` → `/ (root)` → **Save**
-3. Add a redirect so the root URL opens the guide:
-
-```bash
-echo '<meta http-equiv="refresh" content="0;url=mitre-attack-guide.html">' > index.html
-git add index.html && git commit -m "Add Pages entry point" && git push
-```
-
-Your guide will be live at `https://mahialjaber.github.io/mitre-attack-study-guide/` in about a minute.
-
----
-
 ## 📁 Repository layout
 
-```
-mitre-attack-study-guide/
-├── mitre-attack-guide.html          ← the standalone build — this is the one to use
-├── MITRE ATTACK Study Guide.dc.html ← editable source
-├── docs/                            ← screenshots used in this README
-└── README.md
 ```
 
 <div align="center">
