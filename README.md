@@ -34,7 +34,7 @@ Most ATT&CK material makes you pick one of two things:
 
 This guide is both, in one file. The left half teaches the framework — hierarchy, mnemonics, per-tactic deep dives, flashcards, a scored quiz. The right half is the part you keep open during a shift — a triage playbook, 20 ready-to-run hunts, event ID tables, and a LOLBin argument-pattern decoder.
 
-No install. No account. No network. Double-click `mitre-attack-guide.html` and it works — on an air-gapped analyst workstation, on a plane, in an exam prep session at 2am.
+No install. No account. No network. Double-click `index.html` and it works — on an air-gapped analyst workstation, on a plane, in an exam prep session at 2am.
 
 ---
 
