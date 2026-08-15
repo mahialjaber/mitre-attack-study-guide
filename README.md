@@ -52,7 +52,7 @@ xdg-open mitre-attack-guide.html  # Linux
 
 **Option 2 — no git**
 
-Download [`mitre-attack-guide.html`](mitre-attack-guide.html) and open it. That single file is the entire application: fonts, styles, logic and all 20 sections are inlined. Nothing else is required, and nothing is fetched at runtime.
+Download [`mitre-attack-guide.html`](index.html) and open it. That single file is the entire application: fonts, styles, logic and all 20 sections are inlined. Nothing else is required, and nothing is fetched at runtime.
 
 > [!TIP]
 > Drop it in your notes vault, a USB stick, or a SOC jump box. It renders identically everywhere and leaves no trace beyond a `localStorage` key for your own progress.
