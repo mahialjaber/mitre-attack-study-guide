@@ -142,7 +142,7 @@ Twenty sections, ordered from *learn it* → *use it* → *test it*.
 
 ## 📁 Repository layout
 
-```
+``
 
 <div align="center">
 <img src="docs/lolbins-light.png" alt="LOLBin argument-pattern reference table" width="100%">
