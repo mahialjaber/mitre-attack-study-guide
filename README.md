@@ -45,14 +45,14 @@ No install. No account. No network. Double-click `index.html` and it works — o
 ```bash
 git clone https://github.com/mahialjaber/mitre-attack-study-guide.git
 cd mitre-attack-study-guide
-open mitre-attack-guide.html      # macOS
-start mitre-attack-guide.html     # Windows
-xdg-open mitre-attack-guide.html  # Linux
+open index.html      # macOS
+start index.html     # Windows
+xdg-open index.html  # Linux
 ```
 
 **Option 2 — no git**
 
-Download [`mitre-attack-guide.html`](index.html) and open it. That single file is the entire application: fonts, styles, logic and all 20 sections are inlined. Nothing else is required, and nothing is fetched at runtime.
+Download [`index.html`](index.html) and open it. That single file is the entire application: fonts, styles, logic and all 20 sections are inlined. Nothing else is required, and nothing is fetched at runtime.
 
 > [!TIP]
 > Drop it in your notes vault, a USB stick, or a SOC jump box. It renders identically everywhere and leaves no trace beyond a `localStorage` key for your own progress.
@@ -140,9 +140,34 @@ Twenty sections, ordered from *learn it* → *use it* → *test it*.
 
 ---
 
+## 🌐 Publish it as a website
+
+The repository is structured to be published directly via GitHub Pages:
+
+1. In your repository on GitHub, navigate to **Settings → Pages**.
+2. Under **Build and deployment**, select **Deploy from a branch**.
+3. Choose branch `main` and folder `/ (root)`, then click **Save**.
+
+Your guide will be live at `https://mahialjaber.github.io/mitre-attack-study-guide/` in about a minute.
+
+---
+
 ## 📁 Repository layout
 
-``
+```text
+mitre-attack-study-guide/
+├── index.html                   # Interactive standalone single-file study guide
+├── LICENSE                      # MIT License
+├── README.md                    # Documentation & user guide
+├── docs/                        # Screenshots & visual assets
+│   ├── hero-dark.png
+│   ├── hunt-light.png
+│   ├── lolbins-light.png
+│   └── matrix-dark.png
+└── src/                         # Source files
+    ├── study-guide-source.dc.html
+    └── support.js
+```
 
 <div align="center">
 <img src="docs/lolbins-light.png" alt="LOLBin argument-pattern reference table" width="100%">
@@ -189,7 +214,7 @@ Because the environments where this is most useful — locked-down analyst works
 <summary><b>How do I edit it?</b></summary>
 <br>
 
-Edit the source file, not the build. `mitre-attack-guide.html` is a compiled single-file bundle; changes to it will be overwritten. Content lives in the source file's data arrays — tactics, hunts, LOLBins and glossary are all plain JavaScript objects, so adding a hunt is a matter of copying one entry and editing the strings.
+Edit the source file, not the build. `index.html` is a compiled single-file bundle; changes to it will be overwritten. Content lives in the source file's data arrays — tactics, hunts, LOLBins and glossary are all plain JavaScript objects, so adding a hunt is a matter of copying one entry and editing the strings.
 
 </details>
 
