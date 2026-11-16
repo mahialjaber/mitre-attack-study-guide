@@ -4,9 +4,9 @@
 
 **A single HTML file that teaches you ATT&CK and then helps you actually use it on shift.**
 
-Built on Enterprise **v19** — including the Defense Evasion split into *Stealth* and *Defense Impairment*.
+Built on Enterprise **v20 (October 2026)** — including the v19 Defense Evasion split into *Stealth* and *Defense Impairment*, plus v20 AI-enabled and anti-automation tradecraft.
 
-[![Version](https://img.shields.io/badge/ATT%26CK-v19-e2523c?style=flat-square)](https://attack.mitre.org/)
+[![Version](https://img.shields.io/badge/ATT%26CK-v20-e2523c?style=flat-square)](https://attack.mitre.org/)
 [![Single file](https://img.shields.io/badge/build-single%20HTML%20file-4fd1c5?style=flat-square)](#-quick-start)
 [![Offline](https://img.shields.io/badge/works-100%25%20offline-7ec87e?style=flat-square)](#-quick-start)
 [![Dependencies](https://img.shields.io/badge/dependencies-none-a78bfa?style=flat-square)](#-quick-start)
@@ -71,7 +71,7 @@ Twenty sections, ordered from *learn it* → *use it* → *test it*.
 | 02 | **Mental model** | The 5-act narrative of an intrusion, plus a 15-word mnemonic that gets the tactic order into your head in one sitting |
 | 03 | **Matrix** | All 15 columns with every technique and ID, filterable from the header |
 | 04 | **Deep dive** | Per tactic: the adversary's goal in one line, a memory hook, the techniques that matter in real incidents, the telemetry that actually catches them, mitigations, and the trap that catches people out |
-| 05 | **v19 split** | Why Defense Evasion was retired, what moved to Stealth (TA0005) vs Defense Impairment (TA0112), and the SIEM blind spot it created |
+| 05 | **v19/v20 split** | Why Defense Evasion was retired into Stealth (TA0005) vs Defense Impairment (TA0112), the SIEM blind spot it created, and what ATT&CK v20 (Oct 2026) added |
 
 ### Practice
 
@@ -182,7 +182,7 @@ mitre-attack-study-guide/
 <summary><b>Which ATT&CK version is this?</b></summary>
 <br>
 
-Enterprise **v19**. The most significant change it carries is the retirement of Defense Evasion (TA0005), split by adversary intent into **Stealth** (which inherited TA0005) and **Defense Impairment** (the new TA0112). §05 covers the split in full, including why any SIEM rule that only references TA0005 now has a gap.
+Enterprise **v20 (October 2026)**. It carries forward the landmark **v19** retirement of Defense Evasion (TA0005) — split by adversary intent into **Stealth** (which inherited TA0005) and **Defense Impairment** (the new TA0112) — and adds **v20**'s new AI-enabled, prompt-injection (`T1698`/`T1699`), AI exfiltration (`T1700`), AI result poisoning (`T1608.007`), autonomous defense impairment (`T1685.007`), anti-automation evasion (`T1696`), and application-specific password theft (`T1697`) techniques.
 
 </details>
 
@@ -222,7 +222,7 @@ Edit the source file, not the build. `index.html` is a compiled single-file bund
 <summary><b>Found something wrong?</b></summary>
 <br>
 
-Please open an issue — accuracy matters more than completeness here. Technique IDs shift between releases, and a handful of newly-promoted v19 techniques are deliberately marked `new` rather than carrying a guessed ID.
+Please open an issue — accuracy matters more than completeness here. Technique IDs and mappings shift between releases, so if you spot a discrepancy against the current v20 matrix, let us know.
 
 </details>
 
@@ -231,7 +231,7 @@ Please open an issue — accuracy matters more than completeness here. Technique
 ## ⚠️ Accuracy notice
 
 > [!IMPORTANT]
-> ATT&CK changes roughly twice a year (April and October). Technique counts, IDs and tactic membership in this guide reflect **v19** at time of writing. **Always verify against [attack.mitre.org](https://attack.mitre.org/) before citing an ID in a report, ticket or exam answer.**
+> ATT&CK changes roughly twice a year (April and October). Technique counts, IDs and tactic membership in this guide reflect **v20 (October 2026)** at time of writing. **Always verify against [attack.mitre.org](https://attack.mitre.org/) before citing an ID in a report, ticket or exam answer.**
 
 ---
 
