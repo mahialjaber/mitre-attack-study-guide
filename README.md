@@ -13,7 +13,11 @@ Built on Enterprise **v20 (October 2026)** — including the v19 Defense Evasion
 [![Sections](https://img.shields.io/badge/sections-20-e8a33d?style=flat-square)](#-whats-inside)
 [![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](#-license)
 
-<a href="#-quick-start"><b>Quick start</b></a> ·
+<p align="center">
+  <a href="https://mahialjaber.github.io/mitre-attack-study-guide/"><img src="https://img.shields.io/badge/LIVE%20APP-Open%20Study%20Guide-1f6feb?style=for-the-badge" alt="Live interactive guide"></a>
+</p>
+
+<a href="https://mahialjaber.github.io/mitre-attack-study-guide/"><b>Open live guide</b></a> ·
 <a href="#-whats-inside"><b>What's inside</b></a> ·
 <a href="#-who-its-for"><b>Who it's for</b></a> ·
 <a href="#-publish-it-as-a-website"><b>Publish it</b></a> ·
